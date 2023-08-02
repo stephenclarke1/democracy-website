@@ -23,7 +23,8 @@
                 <div>
                     <h2>Welcome To <span class="wordmark">Website Title</span></h2>
                 </div>
-                <form id="mainForm">
+                <form id="myForm" name="form" action="/" onsubmit="getData(this)" >
+                    <!-- onsubmit="return storeValues(this);" -->
                     <h3>Please Select Your Age:</h3>
                     <input type="radio" id="u17" name="agegroup" value="u17">
                     <label for="u17">Under 17</label>
@@ -42,6 +43,38 @@
                     </select>
                     <input type="submit" value="Submit">
                 </form>
+                <div class="result"></div>
+                <script  type="text/javascript">
+                    function store(){
+                       var inputAge= document.getElementsByName("agegroup");
+                       localStorage.setItem("agegroup", inputAge.value);
+
+                    }
+
+                      
+
+                      var storedValue = localStorage.getItem("agegroup");
+
+                      function getData(form) {
+                        var formData = new FormData(form);
+
+                        // // iterate through entries...
+                        // for (var pair of formData.entries()) {
+                        //     console.log(pair[0] + ": " + pair[1]);
+                        // }
+
+                        // ...or output as an object
+                        // console.log(Object.fromEntries(formData));
+                        const obj = Object.fromEntries(formData);
+                        console.log(obj);
+                        localStorage.setItem("formdata", JSON.stringify(obj));
+                        }
+
+                        document.getElementById("myForm").addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        // getData(e.target);
+                        });
+                  </script>
             </div>
         </main>
         <footer>
