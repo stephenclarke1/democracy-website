@@ -61,6 +61,11 @@ main {
   flex-direction: column;
 }
 
+.flex-horizontal {
+  display: flex;
+  gap: 1rem;
+}
+
 
 .card-container {
   display: grid;
@@ -105,6 +110,15 @@ main {
 
 .card-content {
   grid-area: 1 / 3 / 3 / 6; 
+}
+
+footer {
+  background-color: var(--clr-secondary-dark);
+}
+
+.wordmark {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 

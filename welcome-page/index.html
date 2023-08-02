@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
-    <title>Home | Democracy Website</title>
+    <title>Welcome to Website Title</title>
 </head>
 <body>
     <div class="grid-container" id="top">
@@ -20,7 +20,28 @@
         </header>
         <main>
             <div class="content-container">
-                
+                <div>
+                    <h2>Welcome To <span class="wordmark">Website Title</span></h2>
+                </div>
+                <form id="mainForm">
+                    <h3>Please Select Your Age:</h3>
+                    <input type="radio" id="u17" name="agegroup" value="u17">
+                    <label for="u17">Under 17</label>
+                    <input type="radio" id="17" name="agegroup" value="17">
+                    <label for="17">17</label>
+                    <input type="radio" id="18" name="agegroup" value="18">
+                    <label for="18">18 and older</label>
+                    <h3>Please Select Your Electorate:</h3>
+                    <p>If you aren't sure which electorate you're in, visit <a target="_blank" href="https://vote.nz/maps/find-your-electorate/">the offical map</a>.</p>
+                    <label for="electorate">Electorate:</label>
+                    <select name="electorate" id="electorate">
+                        <option value=""></option>
+                        <option value="ohariu">Ōhāriu</option>
+                        <option value="tetaitonga">Te Tai Tonga</option>
+                        <option value="wellingtoncentral">Wellington Central</option>
+                    </select>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </main>
         <footer>
