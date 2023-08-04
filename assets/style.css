@@ -2,21 +2,26 @@
 
 :root {
   --clr-primary-dark: hsl(16, 79%, 54%);
+  --clr-primary-light: hsl(16, 79%, 92%);
   --clr-background: #fff;
   --clr-text-light: #fff;
   --clr-text-dark: #000;
   --clr-secondary-dark: hsl(198, 52%, 56%);
   --clr-secondary-light: hsl(197, 51%, 92%);
+  --font-primary: 'Montserrat', sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-primary);
   background-color: var(--clr-background);
 }
 
@@ -79,6 +84,35 @@ main {
   gap: 1rem;
 }
 
+input[type=submit] {
+  background-color: var(--clr-primary-dark);
+  padding: .5rem 1.5rem;
+  color: var(--clr-text-dark);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: bold;
+}
+
+input[type=radio] {
+  accent-color: var(--clr-primary-dark);
+}
+
+input[type=submit]:hover {
+  background-color: var(--clr-text-light);
+  outline: 3px solid var(--clr-primary-dark);
+  outline-offset: -3px;
+  color: var(--clr-primary-dark);
+}
+
+select {
+  background: none;
+  border: none;
+  font-size: 1em;
+  padding: .5em;
+  font-family: var(--font-primary);
+
+}
 
 .card-container {
   display: grid;

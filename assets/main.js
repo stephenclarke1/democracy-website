@@ -5,8 +5,8 @@ if (formData === null) {
     console.log(formData);
     document.getElementById("ageplace").innerHTML = formData.agegroup;
     document.getElementById("electorateplace").innerHTML = formData.electorate;
-    const aa = document.getElementById("electoratelink")
-    aa.href = "/" + formData.electorate;
+    // const aa = 
+    document.getElementById("electoratelink").href = "/electorates/" + formData.electorate;
     if (formData.agegroup === "u17") {
          document.getElementById("under17").style.display="block";
         console.log(formData.agegroup)
