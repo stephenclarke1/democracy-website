@@ -24,6 +24,19 @@ body {
   display: grid;
 }
 
+#under17 {
+  display: none;
+}
+
+#age18 {
+  display: none;
+}
+
+#age17 {
+  display: none;
+}
+
+
 .page-header {
   background-color: var(--clr-primary-dark);
   color: var(--clr-text-dark);
@@ -91,6 +104,7 @@ main {
   grid-template-rows: repeat(2, 1fr); 
   height: 291px;
   justify-content: center;
+  overflow: hidden;
 }
 
 .coloured-card {
@@ -145,6 +159,10 @@ footer {
 
   .card-content p {
     display: none;
+  }
+
+  .img-margin {
+    margin-right: -3rem;
   }
 
 }

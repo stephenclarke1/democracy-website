@@ -26,7 +26,7 @@
                 <form id="myForm" name="form" action="/" onsubmit="getData(this)" >
                     <!-- onsubmit="return storeValues(this);" -->
                     <h3>Please Select Your Age:</h3>
-                    <input type="radio" id="u17" name="agegroup" value="u17">
+                    <input type="radio" id="u17" required name="agegroup" value="u17">
                     <label for="u17">Under 17</label>
                     <input type="radio" id="17" name="agegroup" value="17">
                     <label for="17">17</label>
@@ -35,7 +35,7 @@
                     <h3>Please Select Your Electorate:</h3>
                     <p>If you aren't sure which electorate you're in, visit <a target="_blank" href="https://vote.nz/maps/find-your-electorate/">the offical map</a>.</p>
                     <label for="electorate">Electorate:</label>
-                    <select name="electorate" id="electorate">
+                    <select name="electorate" required id="electorate">
                         <option value=""></option>
                         <option value="ohariu">Ōhāriu</option>
                         <option value="tetaitonga">Te Tai Tonga</option>
@@ -72,6 +72,9 @@
 
                         document.getElementById("myForm").addEventListener("submit", function (e) {
                         e.preventDefault();
+
+                        // Simulate a mouse click:
+                        window.location.href = "/";
                         // getData(e.target);
                         });
                   </script>

@@ -20,8 +20,11 @@
         </header>
         <main>
             <div class="content-container">
-                <div id="ageplace"><p>Age</p></div>
-                <div id="electorateplace"><p>Electorate</p></div>
+                <p id="ageplace"></p>
+                <p id="electorateplace"></p>
+                <p id="under17">u17 only</p>
+                <p id="age17">17 only</p>
+                <p id="age18">R18!</p>
                 <div class="card-container">
                     <a href="democracy-in-aotearoa/">
                         <section class="card">
@@ -56,7 +59,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="mock-election/">
+                    <a id="test" href="mock-election/">
                         <section class="card coloured-card">
                             <div class="card-img-container">
                                 <img src="assets/media/nz-map-icon.svg" alt="A map of Aotearoa New Zealand">
@@ -71,6 +74,23 @@
             </div>
             <script>
                 const formData = JSON.parse(localStorage.getItem('formdata'));
+                if (formData === null) { 
+                   window.location.href = "/welcome-page";
+                } else {
+                    console.log(formData);
+                    document.getElementById("ageplace").innerHTML = formData.agegroup;
+                    document.getElementById("electorateplace").innerHTML = formData.electorate;
+                    if (formData.agegroup === "u17") {
+                        document.getElementById("under17").style.display="block";
+                        console.log(formData.agegroup)
+                    // } elif (formData.agegroup === "17") {
+                    //     document.getElementById("age17").style.display="block";
+                    //     console.log(formData.agegroup)
+                    // } elif (formData.agegroup === "18") {
+                    //     document.getElementById("age18").style.display="block";
+                    //     console.log(formData.agegroup)
+                    // };
+                };
             </script>
         </main>
         <footer>
