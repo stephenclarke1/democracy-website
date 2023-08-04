@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script defer src="/assets/main.js"></script>
     <title>Home | Democracy Website</title>
 </head>
 <body>
@@ -16,6 +17,7 @@
                 <a href="/2023-general-election/">
                     2023 General Election
                 </a>
+                <a href="/" id="electoratelink">My Electorate</a>
             </nav>
         </header>
         <main>
@@ -72,26 +74,6 @@
                     </a>
                 </div>
             </div>
-            <script>
-                const formData = JSON.parse(localStorage.getItem('formdata'));
-                if (formData === null) { 
-                   window.location.href = "/welcome-page";
-                } else {
-                    console.log(formData);
-                    document.getElementById("ageplace").innerHTML = formData.agegroup;
-                    document.getElementById("electorateplace").innerHTML = formData.electorate;
-                    if (formData.agegroup === "u17") {
-                        document.getElementById("under17").style.display="block";
-                        console.log(formData.agegroup)
-                    // } elif (formData.agegroup === "17") {
-                    //     document.getElementById("age17").style.display="block";
-                    //     console.log(formData.agegroup)
-                    // } elif (formData.agegroup === "18") {
-                    //     document.getElementById("age18").style.display="block";
-                    //     console.log(formData.agegroup)
-                    // };
-                };
-            </script>
         </main>
         <footer>
             <p>New Zealand map by Bence Bezeredy from <a href="https://thenounproject.com/browse/icons/term/new-zealand-map/" target="_blank" title="New Zealand map Icons">Noun Project</a> (CC BY 3.0)</p>
