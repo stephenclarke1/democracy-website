@@ -26,12 +26,20 @@
                 <form id="myForm" name="form" action="/" onsubmit="getData(this)" >
                     <!-- onsubmit="return storeValues(this);" -->
                     <h3>Please Select Your Age:</h3>
-                    <input type="radio" id="u17" required name="agegroup" value="u17">
-                    <label for="u17">Under 17</label>
-                    <input type="radio" id="17" name="agegroup" value="17">
-                    <label for="17">17</label>
-                    <input type="radio" id="18" name="agegroup" value="18">
-                    <label for="18">18 and older</label>
+                    <div class="even-columns">
+                        <div>
+                            <input type="radio" id="u17" required name="agegroup" value="u17">
+                            <label for="u17">Under 17</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="17" name="agegroup" value="17">
+                            <label for="17">17</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="18" name="agegroup" value="18">
+                            <label for="18">18 and older</label>
+                        </div>
+                    </div>
                     <h3>Please Select Your Electorate:</h3>
                     <p>If you aren't sure which electorate you're in, visit <a target="_blank" href="https://vote.nz/maps/find-your-electorate/">the offical map</a>.</p>
                     <select name="electorate" required id="electorate">

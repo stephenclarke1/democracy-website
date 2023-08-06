@@ -84,6 +84,25 @@ main {
   gap: 1rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.even-columns {
+  display: flex;
+  width: 100%;
+}
+
+.even-columns > *{
+  flex-grow: 1;
+    flex-basis: 0;
+}
+
+form h3 {
+  margin: 1rem 0 .25rem 0;
+} 
+
 input[type=submit] {
   background-color: var(--clr-primary-dark);
   padding: .5rem 1.5rem;
@@ -108,6 +127,8 @@ input[type=submit]:hover {
 select {
   background: none;
   border: none;
+  outline: 3px solid var(--clr-primary-dark);
+  outline-offset: -3px;
   font-size: 1em;
   padding: .5em;
   font-family: var(--font-primary);
