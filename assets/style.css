@@ -96,14 +96,22 @@ form {
 
 .even-columns > *{
   flex-grow: 1;
-    flex-basis: 0;
+  flex-basis: 0;
 }
 
 form h3 {
-  margin: 1rem 0 .25rem 0;
-} 
+  margin: 1rem 0 .375rem 0;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
 
 input[type=submit] {
+  margin: 1rem 0;
+  width: min-content;
   background-color: var(--clr-primary-dark);
   padding: .5rem 1.5rem;
   color: var(--clr-text-dark);
@@ -111,6 +119,7 @@ input[type=submit] {
   cursor: pointer;
   font-family: var(--font-primary);
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 input[type=radio] {
@@ -125,8 +134,10 @@ input[type=submit]:hover {
 }
 
 select {
+  margin: .375rem 0 0 0;
   background: none;
   border: none;
+  width: min-content;
   outline: 3px solid var(--clr-primary-dark);
   outline-offset: -3px;
   font-size: 1em;

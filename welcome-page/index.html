@@ -13,20 +13,20 @@
                 <a href="/">
                     <h1>Website Title</h1>
                 </a>
-                <a href="/2023-general-election/">
-                    2023 General Election
-                </a>
             </nav>
         </header>
         <main>
             <div class="content-container">
-                <div>
-                    <h2>Welcome To <span class="wordmark">Website Title</span></h2>
-                </div>
                 <form id="myForm" name="form" action="/" onsubmit="getData(this)" >
                     <!-- onsubmit="return storeValues(this);" -->
+                    <div class="intro">
+                        <h2>Welcome To <span class="wordmark">Website Title</span></h2>
+                        <p>Please enter your details in this form.</p>
+                        <p>The information that you provide will not be sent to us.</p>
+                        <p>Concerned about your data? Check out our <a href="/privacy-policy">privacy policy</a>.</p>
+                    </div>
                     <h3>Please Select Your Age:</h3>
-                    <div class="even-columns">
+                    <div class="radio-buttons">
                         <div>
                             <input type="radio" id="u17" required name="agegroup" value="u17">
                             <label for="u17">Under 17</label>
@@ -65,13 +65,6 @@
                       function getData(form) {
                         var formData = new FormData(form);
 
-                        // // iterate through entries...
-                        // for (var pair of formData.entries()) {
-                        //     console.log(pair[0] + ": " + pair[1]);
-                        // }
-
-                        // ...or output as an object
-                        // console.log(Object.fromEntries(formData));
                         const obj = Object.fromEntries(formData);
                         console.log(obj);
                         localStorage.setItem("formdata", JSON.stringify(obj));
@@ -80,9 +73,7 @@
                         document.getElementById("myForm").addEventListener("submit", function (e) {
                         e.preventDefault();
 
-                        // Simulate a mouse click:
                         window.location.href = "/";
-                        // getData(e.target);
                         });
                   </script>
             </div>
