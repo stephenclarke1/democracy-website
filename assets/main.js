@@ -5,11 +5,11 @@ if (formData === null) {
     console.log(formData);
     // document.getElementById("ageplace").innerHTML = formData.agegroup;
     // document.getElementById("electorateplace").innerHTML = formData.electorate;
-    // const aa = 
     var links = document.getElementsByClassName("electoratelink");
     for (var i = 0; i < links.length; i++) {
-        links[i].href = "/electorates/" + formData.electorate;
-      }
+        links[i].href += formData.electorate;
+        links[i].src += formData.electorate;
+      };
     if (formData.agegroup === "u17") {
          document.getElementById("under17").style.display="block";
         console.log(formData.agegroup)
