@@ -111,6 +111,31 @@ form {
   flex-direction: column;
 }
 
+.mock-election-form {
+  display: grid;
+  grid-template: "party candidates" "submit submit";
+}
+
+.mock-election-form .party {
+  grid-area: party;
+}
+
+.mock-election-form .candidates {
+  grid-area: candidates;
+}
+
+.mock-election-form input[type=submit] {
+  grid-area: submit;
+}
+
+.mock-election-form input[type="radio"] {
+  accent-color: var(--clr-text-dark);
+  -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+  -moz-appearance: checkbox;    /* Firefox */
+  -ms-appearance: checkbox;
+}
+
+
 .even-columns {
   display: flex;
   width: 100%;
@@ -146,6 +171,14 @@ input[type=submit], .cta-button {
   display: block;
 }
 
+.radio {
+  display: flex;
+}
+
+.party .radio {
+  flex-direction: row-reverse;
+}
+
 input[type=radio] {
   accent-color: var(--clr-primary-dark);
 }
@@ -171,6 +204,16 @@ select {
 
 select:hover, select:focus {
   outline-color: var(--clr-secondary-dark);
+}
+
+.iframe-container {
+  padding: 0 !important;
+  margin: 0;
+}
+
+.iframe-container > * {
+  width: 90vw;
+  aspect-ratio: 1/1.41;
 }
 
 .card-container {
