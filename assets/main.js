@@ -3,13 +3,15 @@ if (formData === null) {
     window.location.href = "/welcome-page";
 } else {
     console.log(formData);
-    // document.getElementById("ageplace").innerHTML = formData.agegroup;
-    // document.getElementById("electorateplace").innerHTML = formData.electorate;
     var links = document.getElementsByClassName("electoratelink");
     for (var i = 0; i < links.length; i++) {
         links[i].href += formData.electorate;
         links[i].src += formData.electorate;
-      };
+    };
+    var values = document.getElementsByClassName("electorateform");
+    for (var i = 0; i < values.length; i++) {
+        values[i].value = formData.electorate;
+    };
     if (formData.agegroup === "u17") {
          document.getElementById("under17").style.display="block";
         console.log(formData.agegroup)

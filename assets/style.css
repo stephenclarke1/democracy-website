@@ -113,11 +113,12 @@ form {
 
 .mock-election-form {
   display: grid;
-  grid-template: "party candidates" "submit submit";
+  grid-template: "parties candidates" "submit submit" / 1fr 1fr;
+  column-gap: 1rem;
 }
 
-.mock-election-form .party {
-  grid-area: party;
+.mock-election-form .parties {
+  grid-area: parties;
 }
 
 .mock-election-form .candidates {
@@ -173,11 +174,22 @@ input[type=submit], .cta-button {
 
 .radio {
   display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 
-.party .radio {
+.mock-election-form .radio {
+  flex-direction: row;
+}
+
+.parties .radio {
   flex-direction: row-reverse;
 }
+
+.labels {
+  gap: .5rem;
+}
+
 
 input[type=radio] {
   accent-color: var(--clr-primary-dark);

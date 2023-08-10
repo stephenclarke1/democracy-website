@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/main.js" defer></script>
     <title></title>
 </head>
 <body>
     <div>
         <form class="mock-election-form" action='https://app.formester.com/forms/e0929641-1244-4fa3-984f-8d513b5dd7ab/submissions' method='POST'>
-            <div class="party">
+            <input type="hidden" class="electorateform" id="electorate" name="electorate">
+            <div class="parties">
                 <h2>Party:</h2>
                 <div class="radio">
                     <input type="radio" id="act" name="party" value="act">
