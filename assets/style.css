@@ -112,7 +112,6 @@ form {
 }
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -123,15 +122,34 @@ td, th {
   padding: 8px;
 }
 
+table .party-logo {
+  border-right: none;
+  text-align: center;
+}
+
+table .party-logo + td {
+  border-left: none;
+}
+
+table .party-logo img {
+  max-width: 5rem;
+  max-height: 2.3rem;
+  object-fit: cover;
+}
+
 .mock-election-form table .radio {
   background-color: #000;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;
-  height: 2.2rem;
-  width: 2.2rem;
   padding: 0;
-  /* border: none; */
+}
+
+.mock-election-form .parties table .radio {
+  height: 2.3rem;
+  width: 2.2rem;
+}
+
+.mock-election-form .candidates table .radio {
+  height: 3.5rem;
+  width: 2.2rem;
 }
 
 .mock-election-form table label {
