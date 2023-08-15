@@ -13,13 +13,13 @@ if (formData === null) {
         values[i].value = formData.electorate;
     };
     if (formData.agegroup === "u17") {
-         document.getElementById("under17").style.display="block";
+        document.getElementsByClassName("under17").style.display="block";
         console.log(formData.agegroup)
     } else if (formData.agegroup === "17") {
-        document.getElementById("age17").style.display="block";
+        document.getElementsByClassName("age17").style.display="block";
         console.log(formData.agegroup)
     } else if (formData.agegroup === "18") {
-        document.getElementById("age18").style.display="block";
+        document.getElementsByClassName("age18").style.display="block";
         console.log(formData.agegroup)
     };
 };
