@@ -12,14 +12,24 @@ if (formData === null) {
     for (var i = 0; i < values.length; i++) {
         values[i].value = formData.electorate;
     };
+    var text = document.getElementsByClassName("electoratetext");
+    for (var i = 0; i < text.length; i++) {
+        text[i].innerhtml += formData.electorate;
+    };
     if (formData.agegroup === "u17") {
-        document.getElementsByClassName("under17").style.display="block";
-        console.log(formData.agegroup)
+        var elements = document.getElementsByClassName("under17");
+        for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "block";
+        };
     } else if (formData.agegroup === "17") {
-        document.getElementsByClassName("age17").style.display="block";
-        console.log(formData.agegroup)
+        var elements = document.getElementsByClassName("age17");
+        for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "block";
+        };
     } else if (formData.agegroup === "18") {
-        document.getElementsByClassName("age18").style.display="block";
-        console.log(formData.agegroup)
+        var elements = document.getElementsByClassName("age18");
+        for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "block";
+        };
     };
 };
