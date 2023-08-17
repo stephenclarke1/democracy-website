@@ -14,7 +14,7 @@ if (formData === null) {
     };
     var text = document.getElementsByClassName("electoratetext");
     for (var i = 0; i < text.length; i++) {
-        text[i].innerhtml += formData.electorate;
+        text[i].innerHTML += formData.electorate;
     };
     if (formData.agegroup === "u17") {
         var elements = document.getElementsByClassName("under17");
