@@ -424,6 +424,12 @@ footer a {
   }
 }
 
+@media screen and (max-width: 1322px) {
+  .iframe-container > * {
+    width: 90vw;
+    aspect-ratio: 1/3;
+  }
+}
 
 @media screen and (max-width: 1126px) {
   .card-img-container {
@@ -468,6 +474,7 @@ footer a {
   .mock-election-form .candidates {
     margin-top: 4rem;
   }
+
 }
 
 @media screen and (max-width: 750px) {
