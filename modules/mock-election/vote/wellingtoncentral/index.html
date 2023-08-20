@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
     <script src="/assets/main.js" defer></script>
-    <title></title>
+    <title></title>        
 </head>
 <body>
-    <div>
+    <div id="custom-form-container">
         <h1 class="text-centre">Wellington Central</h1>
         <form class="mock-election-form" action='https://app.formester.com/forms/e0929641-1244-4fa3-984f-8d513b5dd7ab/submissions' method='POST'>
             <input type="hidden" class="electorateform" id="electorate" name="electorate">
@@ -28,7 +28,7 @@
                     <tr>
                         <td class="party-logo"><label for="cannabis"><img src="https://elections.nz/assets/Party-logos/The-Cannabis-Party_270720__ScaleWidthWzMwMF0.jpg" alt="The Aotearoa Legalise Cannabis Party logo"></label></td>
                         <td><label for="cannabis">Aotearoa Legalise Cannabis Party</label></td>
-                        <td class="radio"><input type="radio" id="cannabis" name="party" value="Aotearoa Legalise Cannabis Party"></td>
+                        <td class="radio"><input type="radio" id="cannabis" name="party" value="cannabis"></td>
                     </tr>
                     <tr>
                         <td class="party-logo"><label for="democracynz"><img src="https://elections.nz/assets/Party-logos/JPEG_DemocracyNZ_LOGO_Stack-jpg__ScaleWidthWzMwMF0.jpg" alt="The DemocracyNZ logo"></label></td>
@@ -145,5 +145,16 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector("#custom-form-container form");
+            
+            if (form) {
+                form.addEventListener("submit", function() {
+                    localStorage.setItem("formComplete", "true");
+                });
+            };
+        });
+    </script>
 </body>
 </html>

@@ -53,10 +53,9 @@
                     function store(){
                        var inputAge= document.getElementsByName("agegroup");
                        localStorage.setItem("agegroup", inputAge.value);
+                       localStorage.setItem("formComplete", "false");
 
                     }
-
-                      
 
                       var storedValue = localStorage.getItem("agegroup");
 

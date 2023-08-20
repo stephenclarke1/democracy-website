@@ -328,12 +328,18 @@ select:hover, select:focus {
   outline-color: var(--clr-secondary-dark);
 }
 
-.iframe-container {
+.iframe-container, .iframe-container-vote {
   padding: 0 !important;
   margin: 0;
 }
 
 .iframe-container > * {
+  width: 71vw;
+  aspect-ratio: 1/1.41;
+  max-width: 1200px;
+}
+
+.iframe-container-vote > * {
   width: 90vw;
   aspect-ratio: 1/1.41;
   max-width: 1200px;
@@ -425,7 +431,7 @@ footer a {
 }
 
 @media screen and (max-width: 1322px) {
-  .iframe-container > * {
+  .iframe-container-vote > * {
     width: 90vw;
     aspect-ratio: 1/3;
   }
