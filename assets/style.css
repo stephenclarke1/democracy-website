@@ -216,8 +216,6 @@ table .party-logo img {
 }
 
 .mock-election-form h2 {
-  text-transform: uppercase;
-  font-weight: 700;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -417,6 +415,10 @@ footer a {
   align-items: center;
   width: 100%;
   padding: 0 2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .wordmark {
