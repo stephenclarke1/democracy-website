@@ -376,9 +376,19 @@ select:hover, select:focus {
   overflow: hidden;
 }
 
-.coloured-card {
+.coloured-card, .secondary-colour {
   background-color: var(--clr-secondary-light);
   outline: 3px solid var(--clr-secondary-dark);
+}
+
+.box {
+  border-radius: 25px;
+  padding: 1em 1em 0.5em 1em;
+  margin-bottom: 1.6em;
+}
+
+.post-container a {
+  color: var(--clr-text-dark);
 }
 
 .card-img-container {
