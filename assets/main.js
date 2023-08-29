@@ -33,3 +33,13 @@ if (formData === null) {
         };
     };
 };
+function menuToggle () {
+    const menuButton = document.getElementById("menuButton");
+    const navMenu = document.getElementById("navList");
+    menuButton.classList.toggle("menu-toggle-open");
+    if (menuButton.classList.contains("menu-toggle-open")) {
+      navMenu.classList.toggle("mobile-menu-open");
+    } else {
+      navMenu.classList.toggle("mobile-menu-open");
+    }
+  };
