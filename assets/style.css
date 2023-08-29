@@ -100,6 +100,10 @@ a:focus, a:hover {
   border: none;
 }
 
+.menu-toggle-button:hover {
+  text-decoration: none;
+}
+
 .primary-nav {
   display: flex;
   gap: 1rem;
@@ -546,8 +550,20 @@ footer a {
   }
 
   .mobile-menu-open {
+    background-color: var(--clr-primary-dark);
     display: flex !important;
     position: absolute;
-    margin-top: 5.5rem;
+    gap: 2rem;
+    margin-top: 8.5rem;
+    padding: 2rem 0;
+    margin-left: -2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-menu-open a {
+    padding: .5rem;
   }
 }
