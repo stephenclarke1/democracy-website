@@ -25,13 +25,16 @@
   text-align: center;
 }
 
-body {
-  font-family: var(--font-primary);
-  background-color: var(--clr-background);
+html {
   scroll-behavior: smooth;
 }
 
-p {
+body {
+  font-family: var(--font-primary);
+  background-color: var(--clr-background);
+}
+
+p, .post-body ul {
   margin: 0 0 1.6em;
 }
 
@@ -413,6 +416,8 @@ select:hover, select:focus {
   border-radius: 25px;
   padding: 1em 1em 0.5em 1em;
   margin-bottom: 1.6em;
+  margin-bottom: 1.6em;
+margin-top: 1.6em;
 }
 
 .post-container a {
@@ -565,5 +570,9 @@ footer a {
 
   .mobile-menu-open a {
     padding: .5rem;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
   }
 }
