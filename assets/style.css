@@ -6,6 +6,7 @@
   --clr-background: #fff;
   --clr-text-light: #fff;
   --clr-text-dark: #000;
+  --clr-secondary-darker: hsl(198, 52%, 40%);
   --clr-secondary-dark: hsl(198, 52%, 56%);
   --clr-secondary-light: hsl(197, 51%, 92%);
   --font-primary: 'Montserrat', sans-serif;
@@ -420,8 +421,12 @@ select:hover, select:focus {
 margin-top: 1.6em;
 }
 
+.secondary-colour a {
+  color: var(--clr-text-dark) !important;
+}
+
 .post-container a {
-  color: var(--clr-text-dark);
+  color: var(--clr-secondary-darker);
 }
 
 .card-img-container {
