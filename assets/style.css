@@ -47,10 +47,6 @@ p, .post-body ul {
   padding-left: 1.5rem;
 }
 
-.post-body img, .post-body figure {
-  width: clamp(200px, 30vw, 450px);
-}
-
 .post-body figure {
   display: inline-block;
 }
@@ -58,11 +54,27 @@ p, .post-body ul {
 .post-body .float-left {
   float: left;
   margin: 1rem 1.5rem 1rem 0;
+  width: clamp(200px, 30vw, 450px);
+}
+
+.post-body .float-left > *, .post-body .float-right > * {
+  width: clamp(200px, 30vw, 450px);
 }
 
 .post-body .float-right {
   float: right;
   margin: 1rem 0 1rem 1.5rem;
+  width: clamp(200px, 30vw, 450px);
+}
+
+.post-body .img-centre {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem 0;
+}
+
+.clear {
+  clear: both;
 }
 
 h1, h2, h3, h4 {
