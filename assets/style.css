@@ -10,7 +10,8 @@
   --clr-secondary-dark: hsl(198, 52%, 56%);
   --clr-secondary-light: hsl(197, 51%, 92%);
   --font-primary: 'Montserrat', sans-serif;
-  --max-width-content: 1314px;
+  --max-width-content: 860px;
+  /* 1314 */
 }
 
 * {
@@ -70,7 +71,24 @@ p, .post-body ul {
 .post-body .img-centre {
   width: 100%;
   max-width: 500px;
-  padding: 1rem 0;
+  padding: 1em 0;
+  align-self: center;
+}
+
+.intro-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.post-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+figcaption {
+  font-size: .9rem;
 }
 
 .clear {
