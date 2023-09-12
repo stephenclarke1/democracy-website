@@ -41,7 +41,7 @@ p, .post-body ul {
 }
 
 .post-body p:last-of-type {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 .post-body ul {
@@ -79,12 +79,14 @@ p, .post-body ul {
   font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 3rem;
+  padding: 1em;
+  background-color: var(--clr-secondary-light);
 }
 
 .post-section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 figcaption {
@@ -633,7 +635,7 @@ footer a {
 @media screen and (max-width: 460px){
   .post-body .float-left, .post-body .float-right {
     float: none;
-    margin: 0;
+    margin: 1rem 0;
     width: 100%;
   }
 
