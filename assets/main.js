@@ -1,7 +1,7 @@
 const currentPath = window.location.pathname;
+const formData = JSON.parse(localStorage.getItem('formdata'));
 
-if (currentPath !== "/welcome-page") {
-    const formData = JSON.parse(localStorage.getItem('formdata'));
+if (currentPath !== "/welcome-page/") {
 if (formData === null) { 
     window.location.href = "/welcome-page";
 } else {
