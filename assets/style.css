@@ -68,7 +68,7 @@ p, .post-body ul {
   width: clamp(200px, 30vw, 450px);
 }
 
-.post-body .img-centre {
+.post-body .img-centre, .post-body .img-centre img {
   width: 100%;
   max-width: 500px;
   padding: 1em 0;
