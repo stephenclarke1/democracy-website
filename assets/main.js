@@ -1,4 +1,7 @@
-const formData = JSON.parse(localStorage.getItem('formdata'));
+const currentPath = window.location.pathname;
+
+if (currentPath !== "/welcome-page") {
+    const formData = JSON.parse(localStorage.getItem('formdata'));
 if (formData === null) { 
     window.location.href = "/welcome-page";
 } else {
@@ -33,6 +36,8 @@ if (formData === null) {
         };
     };
 };
+}
+
 function menuToggle () {
     const menuButton = document.getElementById("menuButton");
     const navMenu = document.getElementById("navList");
