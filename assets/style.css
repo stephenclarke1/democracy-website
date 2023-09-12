@@ -629,3 +629,16 @@ footer a {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 460px){
+  .post-body .float-left, .post-body .float-right {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .post-body .float-left > *, .post-body .float-right > * {
+    width: 100%; 
+  }
+  
+}
