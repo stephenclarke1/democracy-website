@@ -11,11 +11,15 @@
     <div class="grid-container" id="top">
         <header class="page-header">
             <nav class="primary-nav">
-                <ul>
-                    <li><a href="/" class="title"><h1>Ballot Box</h1></a></li>
+                <a href="/" class="title"><h1>Ballot Box</h1></a>
+                <ul id="navList">
                     <li><a href="/2023-general-election/">2023 General Election</a></li>
-                    <li><a href="/electorates/" class="electoratelink active">My Electorate</a></li>
+                    <li><a href="/electorates/" class="electoratelink">My Electorate</a></li>
                 </ul>
+                <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
+                    <div class="hamburger" aria-hidden="true"></div>
+                    <span>Menu</span>
+                </button>
             </nav>
         </header>
         <main class="content">
