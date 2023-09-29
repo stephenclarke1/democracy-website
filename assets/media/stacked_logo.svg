@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 1920" style="enable-background:new 0 0 1080 1920;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E65E2D;stroke:#000000;stroke-width:15.5186;stroke-miterlimit:10;}
+	.st1{stroke:#000000;stroke-width:7.7593;stroke-miterlimit:10;}
+	.st2{font-family:'Montserrat-ExtraBold';}
+	.st3{font-size:99.0294px;}
+	.st4{fill:#E65E2D;}
+</style>
+<path class="st0" d="M753.15,1020h-443c-9.94,0-18-8.06-18-18V655c0-9.94,8.06-18,18-18h443c9.94,0,18,8.06,18,18v347
+	C771.15,1011.94,763.1,1020,753.15,1020z"/>
+<path class="st0" d="M770.66,661.2c0,21.73-16.83,38.8-38.24,38.8H330.89c-21.41,0-38.24-17.07-38.24-38.8V551.02
+	c0-21.73,16.83-38.8,38.24-38.8h401.53c21.42,0,38.24,17.07,38.24,38.8V661.2z"/>
+<path class="st1" d="M675.2,607.18c0,9.06-10.09,15.99-23.28,15.99H410.61c-12.41,0-23.28-6.93-23.28-15.99v-2.13
+	c0-9.06,10.86-15.99,23.28-15.99H652.7c13.19,0,23.28,6.93,23.28,15.99v2.13C675.98,607.18,675.2,607.18,675.2,607.18z"/>
+<rect x="476.18" y="290.32" width="110.96" height="183.9"/>
+<polygon points="531.31,549.92 649.85,457.27 413.46,457.27 "/>
+<g>
+	<text transform="matrix(1 0 0 1 321.9612 844.459)" class="st2 st3">BALLOT</text>
+	<text transform="matrix(1 0 0 1 321.9614 961.8171)" class="st2 st3">BO</text>
+	<text transform="matrix(1 0 0 1 530.7645 961.8171)" class="st2 st3">OX</text>
+	<rect x="441.17" y="899" class="st4" width="129.92" height="48"/>
+	<path d="M568.88,907.2H441.59c-4.14,0-7.5-3.36-7.5-7.5v-1c0-4.14,3.36-7.5,7.5-7.5h127.29c4.14,0,7.5,3.36,7.5,7.5v1
+		C576.38,903.84,573.02,907.2,568.88,907.2z"/>
+	<path d="M569.09,963H442.79c-4.42,0-8-3.58-8-8l0,0c0-4.42,3.58-8,8-8h126.29c4.42,0,8,3.58,8,8l0,0
+		C577.09,959.42,573.5,963,569.09,963z"/>
+</g>
+</svg>

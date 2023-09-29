@@ -188,12 +188,15 @@ a:focus, a:hover {
 
 .primary-nav .title {
   text-decoration: none;
+  display: flex;
+  gap: .5rem;
 }
 
 .primary-nav h1 {
   text-transform: uppercase;
   margin: 0;
   font-weight: bold;
+  align-self: center;
 }
 
 .content {
