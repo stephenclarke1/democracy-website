@@ -475,10 +475,14 @@ select:hover, select:focus {
   padding: 1em 1em 0.5em 1em;
   margin-bottom: 1.6em;
   margin-bottom: 1.6em;
-margin-top: 1.6em;
+  margin-top: 1.6em;
 }
 
-.secondary-colour a {
+.box img {
+  border-radius: 25px;
+}
+
+.secondary-colour a, .intro-text a {
   color: var(--clr-text-dark) !important;
 }
 
