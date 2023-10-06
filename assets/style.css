@@ -307,6 +307,7 @@ table .party-logo img {
 
 .mock-election-form input[type=submit] {
   grid-area: submit;
+  width: calc(100vw);
 }
 
 .mock-election-form input[type="radio"] {
