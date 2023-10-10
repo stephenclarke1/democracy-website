@@ -192,6 +192,10 @@ a:focus, a:hover {
   gap: .5rem;
 }
 
+.primary-nav .title img {
+  margin-top: -1.31rem;
+}
+
 .primary-nav h1 {
   text-transform: uppercase;
   margin: 0;
