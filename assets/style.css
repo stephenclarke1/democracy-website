@@ -70,7 +70,7 @@ p, .post-body ul {
 
 .post-body .img-centre, .post-body .img-centre img {
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   padding: 1em 0;
   align-self: center;
 }
