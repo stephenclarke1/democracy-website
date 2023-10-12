@@ -238,6 +238,7 @@ td, th {
   border: 1px solid var(--clr-text-dark);
   text-align: left;
   padding: 8px;
+  height: 57.6px;
 }
 
 .parties table .party-logo {
@@ -311,7 +312,6 @@ table .party-logo img {
 
 .mock-election-form input[type=submit] {
   grid-area: submit;
-  width: calc(100vw);
 }
 
 .mock-election-form input[type="radio"] {
