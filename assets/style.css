@@ -34,6 +34,10 @@ html {
 body {
   font-family: var(--font-primary);
   background-color: var(--clr-background);
+} 
+
+.hidden {
+  display: none;
 }
 
 p, .post-body ul {
