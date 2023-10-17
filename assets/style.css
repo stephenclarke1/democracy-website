@@ -36,6 +36,14 @@ body {
   background-color: var(--clr-background);
 } 
 
+.secondary-colour a, .intro-text a {
+  color: var(--clr-text-dark) !important;
+}
+
+.post-container a {
+  color: var(--clr-secondary-darker);
+}
+
 .hidden {
   display: none;
 }
@@ -214,6 +222,13 @@ a:focus, a:hover {
   align-self: center;
 }
 
+.module-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .content {
   grid-area: content;
 }
@@ -362,7 +377,7 @@ input[type=submit], .cta-button {
   width: fit-content;
   background-color: var(--clr-primary-dark);
   padding: .5rem 1.5rem;
-  color: var(--clr-text-dark)!important;
+  color: var(--clr-text-dark) !important;
   border: none;
   cursor: pointer;
   font-family: var(--font-primary);
@@ -370,6 +385,11 @@ input[type=submit], .cta-button {
   font-size: 1.1rem;
   text-decoration: none;
   display: block;
+}
+
+.module-nav .cta-button {
+  color: var(--clr-text-dark);
+  background-color: var(--clr-secondary-light);
 }
 
 .mock-election-form .radio {
@@ -409,6 +429,12 @@ input[type=submit]:hover, .cta-button:hover, input[type=submit]:focus, .cta-butt
   outline: 3px solid var(--clr-primary-dark);
   outline-offset: -3px;
   color: var(--clr-primary-dark) !important;
+}
+
+.module-nav .cta-button:hover, .module-nav .cta-button:focus {
+  color: var(--clr-text-dark) !important;
+  outline-color: var(--clr-secondary-dark);
+  background-color: var(--clr-text-light);
 }
 
 select {
@@ -496,14 +522,6 @@ select:hover, select:focus {
 
 .box img {
   border-radius: 25px;
-}
-
-.secondary-colour a, .intro-text a {
-  color: var(--clr-text-dark) !important;
-}
-
-.post-container a {
-  color: var(--clr-secondary-darker);
 }
 
 .card-img-container {
