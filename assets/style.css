@@ -578,7 +578,7 @@ footer a {
   display: none;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .content-container > * {
     padding: 0 5vw;
   }
@@ -598,7 +598,7 @@ footer a {
 
 }
 
-@media screen and (max-width: 941px) {
+@media screen and (max-width: 1066px) {
   .card {
     display: flex;
     flex-direction: column;
@@ -702,7 +702,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 641px){
   .post-body .float-left, .post-body .float-right {
     float: none;
     margin: 1rem 0;
