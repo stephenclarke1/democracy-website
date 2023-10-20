@@ -36,6 +36,20 @@ body {
   background-color: var(--clr-background);
 } 
 
+.header-strip {
+  background: var(--clr-secondary-dark);
+}
+
+.header-strip p {
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.header-strip a {
+  color: var(--clr-text-dark);
+}
+
 .secondary-colour a, .intro-text a {
   color: var(--clr-text-dark) !important;
 }
