@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
+    <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
     <script defer src="/assets/main.js"></script>
     <title>Home | BALLOT BOX</title>
 </head>
@@ -12,11 +13,19 @@
     <div class="grid-container" id="top">
         <header class="page-header">
             <nav class="primary-nav">
-                                          <!-- <img src="/assets/media/logo_stroke_fullcolour.svg" width="50px"> -->
                 <a href="/" class="title"><h1>Ballot Box</h1></a>
                 <ul id="navList">
                     <li><a href="/2023-general-election/">2023 General Election</a></li>
                     <li><a href="/electorates/" class="electoratelink">My Electorate</a></li>
+                    <li>
+                        <button onclick="myFunction(this)" class="dropdown-button">Modules</button>
+                        <ul  id="myDropdown" class="dropdown-submenu">
+                            <li><a href="/modules/democracy-in-aotearoa/">Democracy in Aotearoa</a></li>
+                            <li><a href="/modules/how-to-enrol-vote/">How to Enrol and Vote</a></li>
+                            <li><a href="/modules/māori-representation/">Māori Representation</a></li>
+                            <li><a href="/modules/mock-election/">Mock Election</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
                     <div class="hamburger" aria-hidden="true"></div>
