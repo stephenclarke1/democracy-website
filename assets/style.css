@@ -255,6 +255,16 @@ a:focus, a:hover {
   content: "\f078";
 }
 
+.dropdown-submenu-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s;
+}
+
+.dropdown-visible.dropdown-submenu-wrapper {
+  grid-template-rows: 1fr;
+}
+
 .dropdown-submenu {
   position: absolute;
   list-style-type: none;
@@ -682,6 +692,10 @@ footer a {
     align-items: center;
   } 
 
+  .card-content h2 {
+    text-align: center;
+  }
+
   .card-content p {
     display: none;
   }
@@ -754,13 +768,13 @@ footer a {
     flex-direction: column;
   }
 
-  .rappa {
+  .mobile-menu-wrapper {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s;
   }
 
-  .mobile-menu-open.rappa {
+  .mobile-menu-open.mobile-menu-wrapper {
     grid-template-rows: 1fr;
   }
 
