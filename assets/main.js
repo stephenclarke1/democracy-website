@@ -59,7 +59,7 @@ window.onclick = function(event) {
 function menuToggle () {
     const menuButton = document.getElementById("menuButton");
     const navMenu = document.getElementById("navList");
-    const menuContainer = document.getElementById("primaryNav");
+    const menuContainer = document.getElementById("rappa");
     menuButton.classList.toggle("menu-toggle-open");
     if (menuButton.classList.contains("menu-toggle-open")) {
       navMenu.classList.toggle("mobile-menu-open");
