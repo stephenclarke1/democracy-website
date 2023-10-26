@@ -504,6 +504,18 @@ input[type=submit]:hover, .cta-button:hover, input[type=submit]:focus, .cta-butt
   background-color: var(--clr-text-light);
 }
 
+.cta-button.greyed-out {
+  background-color: #f4f4f4;
+  color: #525353 !important;
+}
+
+.cta-button.greyed-out:hover {
+  background-color: #f4f4f4;
+  color: #525353 !important;
+  cursor: auto;
+  outline: none;
+}
+
 select {
   margin: .375rem 0 0 0;
   background: none;
